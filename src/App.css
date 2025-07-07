@@ -1,0 +1,131 @@
+.app {
+  padding: 30px;
+  margin: 50px;
+}
+
+.main-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.todo-wrapper {
+  padding: 30px;
+  margin: 30px auto;
+  background-color: lightgray;
+  border-radius: 8px;
+  width: 800px;
+}
+
+.todo-input {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input input {
+  padding: 10px;
+  width: 60%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-add-task {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-add-task:hover {
+  background-color: #45a049;
+}
+
+.todo-list-btns {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.btn-todo-task,
+.btn-completed-task {
+  padding: 8px 16px;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-todo-task{
+  background-color: #2196F3;
+}
+
+.btn-todo-task:hover {
+  background-color: #1976D2;
+}
+
+.btn-completed-task {
+  background-color: #4CAF50;
+}
+
+.btn-completed-task:hover {
+  background-color: #45a049;
+}
+
+.all-todos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f3f3;
+  padding: 0px 14px;
+  border-radius: 6px;
+  font-size: 17px;
+}
+
+.todo h3{
+    margin-left: 30px;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 10px; /* space between buttons */
+}
+
+.btn-complete-task, .btn-delete-task {
+  margin-left: 10px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-complete-task {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn-complete-task:hover{
+    background-color: #45a049;
+}
+
+.btn-delete-task{
+    color: white;
+    background-color: #f44336;
+}
+
+.btn-delete-task:hover{
+    background-color: #e53935;
+}
