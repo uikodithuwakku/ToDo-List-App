@@ -1,8 +1,3 @@
-.app {
-  padding: 30px;
-  margin: 50px;
-}
-
 .main-heading {
   text-align: center;
   margin-bottom: 20px;
@@ -63,19 +58,17 @@
 }
 
 .btn-todo-task{
-  background-color: #2196F3;
-}
-
-.btn-todo-task:hover {
-  background-color: #1976D2;
+  background-color: white;
+  color: gray;
 }
 
 .btn-completed-task {
-  background-color: #4CAF50;
+  background-color: white;
+  color: gray;
 }
 
-.btn-completed-task:hover {
-  background-color: #45a049;
+.section-name{
+  margin-left: 90px;
 }
 
 .all-todos {
@@ -83,6 +76,11 @@
   flex-direction: column;
   gap: 15px;
   align-items: center;
+}
+
+.active-filter {
+    background-color: #2196F3; /* Darker blue for active */
+    color: white;
 }
 
 /* --- CSS for TODoItem --- */
@@ -105,7 +103,7 @@
 
 .todo-actions {
   display: flex;
-  gap: 10px; /* space between buttons */
+  gap: 10px; 
 }
 
 .btn-complete-task, .btn-delete-task {
@@ -122,10 +120,6 @@
   color: white;
 }
 
-.btn-complete-task:hover{
-    background-color: #1976D2;
-}
-
 .btn-delete-task{
     color: white;
     background-color: #f44336;
@@ -133,4 +127,16 @@
 
 .btn-delete-task:hover{
     background-color: #e53935;
+}
+
+.completed-text {
+    text-decoration: line-through;
+    color: #888; 
+    font-style: italic; 
+}
+
+.todo-info input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }
