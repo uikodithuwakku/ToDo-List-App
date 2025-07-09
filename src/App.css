@@ -1,18 +1,25 @@
+.app{
+  padding: 20px;
+}
+
 .main-heading {
   text-align: center;
   margin-bottom: 20px;
 }
 
 .todo-wrapper {
-  padding: 30px;
-  margin: 30px auto;
+  padding: 20px;
+  margin: 20px auto;
   background-color: lightgray;
   border-radius: 8px;
-  width: 800px;
+  width: 90%;
+  max-width: 800px;
 }
 
 .todo-input {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
@@ -20,10 +27,12 @@
 
 .todo-input input {
   padding: 10px;
-  width: 60%;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  flex: 1;
+  min-width: 0;
+  max-width: 500px;
 }
 
 .btn-add-task {
@@ -34,6 +43,8 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  flex-shrink: 0; 
+  padding: 10px 16px;
 }
 
 .btn-add-task:hover {
@@ -79,7 +90,7 @@
 }
 
 .active-filter {
-    background-color: #2196F3; /* Darker blue for active */
+    background-color: #2196F3; 
     color: white;
 }
 
@@ -92,18 +103,25 @@
   padding: 0px 14px;
   border-radius: 6px;
   font-size: 17px;
-  width: 600px;
+  width: 80%;
+  gap: 10px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .todo-info{
   display: flex;
   align-items: center;
   gap: 20px;
+  flex-wrap: nowrap;
+  flex: 1;
+  min-width: 0;
 }
 
 .todo-actions {
   display: flex;
   gap: 10px; 
+  flex-shrink: 0;
 }
 
 .btn-complete-task, .btn-delete-task {
@@ -139,4 +157,63 @@
     width: 20px;
     height: 20px;
     cursor: pointer;
+}
+
+/* Media Queries for small screen sizes */
+@media (max-width: 600px) {
+  .app{
+    padding: 20px;
+  }
+  
+  .main-heading {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+
+  .todo-input {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .todo-input input {
+    width: 70%;
+  }
+
+  .btn-add-task {
+    width: 25%;
+  }
+
+  .todo-list-btns {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-todo-task,
+  .btn-completed-task {
+    width: 100%;
+  }
+
+  .section-name {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .all-todos {
+    width: 100%;
+  }
+
+  .todo {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .todo-actions {
+    justify-content: flex-end;
+  }
+
+  .btn-complete-task,
+  .btn-delete-task {
+    width: 100%;
+  }
 }
