@@ -1,6 +1,6 @@
 # To-Do List Application
 
-A simple and intuitive To-Do Application built using HTML, CSS, and JavaScript. This application empowers users to efficiently manage their daily tasks by providing features to create, delete, and mark tasks as completed.
+This is a simple To-Do app built using HTML, CSS, and JavaScript. It lets users easily create, delete, and mark tasks as completed to manage their daily tasks.
 
 ## Features
 
@@ -16,7 +16,9 @@ A simple and intuitive To-Do Application built using HTML, CSS, and JavaScript. 
 - CSS
 - JavaScript
 
-## Link for live Demo
+## Experience It Live!
+
+Curious to see it in action? Check out the live demo here:
 
 - https://uikodithuwakku.github.io/ToDo-List-App/
 
